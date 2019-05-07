@@ -1,11 +1,11 @@
-# ![LOGO](logo.png) ART19 Content MSP Connector
+# ![LOGO](logo.png) ART19 Content **flow**ground Connector
 
 ## Description
 
-A generated MSP connector for the ART19 Content API (version 1.0.0).
+A generated **flow**ground connector for the ART19 Content API (version 1.0.0).
 
 Generated from: https://api.apis.guru/v2/specs/art19.com/1.0.0/swagger.json<br/>
-Generated at: 2019-05-07T11:17:14+03:00
+Generated at: 2019-05-07T17:36:56+03:00
 
 ## API Description
 
@@ -221,7 +221,7 @@ Supported authorization schemes:
 
 ## License
 
-flowground :- Telekom iPaaS / art-19-com-connector<br/>
+**flow**ground :- Telekom iPaaS / art-19-com-connector<br/>
 Copyright © 2019, [Deutsche Telekom AG](https://www.telekom.de)<br/>
 contact: flowground@telekom.de
 

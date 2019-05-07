@@ -1,0 +1,23 @@
+{
+    "type": "object",
+    "properties": {
+        "network_id": {
+            "type": "string"
+        },
+        "q": {
+            "type": "string"
+        },
+        "sort": {
+            "type": "string"
+        },
+        "ids__": {
+            "type": "string"
+        },
+        "page_number_": {
+            "type": "integer"
+        },
+        "page_size_": {
+            "type": "integer"
+        }
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "type": "object",
+    "properties": {
+        "series_id": {
+            "type": "string"
+        },
+        "season_id": {
+            "type": "string"
+        },
+        "q": {
+            "type": "string"
+        },
+        "year": {
+            "type": "string"
+        },
+        "month": {
+            "type": "string"
+        },
+        "rss": {
+            "type": "boolean"
+        },
+        "sort": {
+            "type": "string"
+        },
+        "ids__": {
+            "type": "string"
+        },
+        "page_number_": {
+            "type": "integer"
+        },
+        "page_size_": {
+            "type": "integer"
+        }
+    }
+}

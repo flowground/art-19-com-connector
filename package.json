@@ -1,0 +1,15 @@
+{
+    "name": "art-19-com-connector",
+    "version": "1.0.0",
+    "description": "The ART19 Content API conforms to the JSON-API specification. Details and examples can be found at http://jsonapi.org. <br/><br/>API requests <b>MUST</b> use the HTTP Accept header:<br/><code>Accept: application/vnd.api+json</code><br/><br/>API requests <b>MUST</b> be authenticated using the HTTP Authorization header: <br/><code>Authorization: Token token=\"your-token\", credential=\"your-credential\"</code>",
+    "main": "component.json",
+    "dependencies": {
+        "elasticio-node": "0.0.9",
+        "elasticio-sailor-nodejs": "^2.2.1",
+        "swagger-client": "^3.8.22"
+    },
+    "author": {
+        "name": "Deutsche Telekom AG"
+    },
+    "license": "Apache-2.0"
+}

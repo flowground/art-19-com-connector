@@ -1,0 +1,23 @@
+{
+    "type": "object",
+    "properties": {
+        "q": {
+            "type": "string"
+        },
+        "sort": {
+            "type": "string"
+        },
+        "ids__": {
+            "type": "string"
+        },
+        "page_number_": {
+            "type": "integer"
+        },
+        "exclude_ids__": {
+            "type": "integer"
+        },
+        "page_size_": {
+            "type": "integer"
+        }
+    }
+}

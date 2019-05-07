@@ -1,0 +1,391 @@
+{
+    "title": "ART19 Content",
+    "description": "The ART19 Content API conforms to the JSON-API specification. Details and examples can be found at http://jsonapi.org. <br/><br/>API requests <b>MUST</b> use the HTTP Accept header:<br/><code>Accept: application/vnd.api+json</code><br/><br/>API requests <b>MUST</b> be authenticated using the HTTP Authorization header: <br/><code>Authorization: Token token=\"your-token\", credential=\"your-credential\"</code>",
+    "docsUrl": "",
+    "url": "https://api.apis.guru/v2/specs/art19.com/1.0.0/swagger.json",
+    "envVars": {},
+    "credentials": {
+        "fields": {
+            "server": {
+                "label": "Server",
+                "viewClass": "SelectView",
+                "model": [
+                    "https://art19.com/",
+                    "--- Custom URL"
+                ],
+                "required": true
+            },
+            "otherServer": {
+                "label": "Custom Server URL",
+                "viewClass": "TextFieldView"
+            },
+            "api_key": {
+                "label": "Authentication (api_key)",
+                "viewClass": "TextFieldView",
+                "note": "Authorization: Token token=\"your-token\", credential=\"your-credential\""
+            }
+        }
+    },
+    "triggers": {
+        "startFlow": {
+            "main": "./lib/triggers/startFlow.js",
+            "type": "polling",
+            "title": "Start Flow",
+            "fields": {}
+        }
+    },
+    "actions": {
+        "get_classification_inclusions": {
+            "main": "./lib/actions/get_classification_inclusions.js",
+            "title": "Fetch resource collection",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_classification_inclusions.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_classification_inclusions__id_": {
+            "main": "./lib/actions/get_classification_inclusions__id_.js",
+            "title": "Fetch resource",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_classification_inclusions__id_.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_classifications": {
+            "main": "./lib/actions/get_classifications.js",
+            "title": "Fetch resource collection",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_classifications.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_classifications__id_": {
+            "main": "./lib/actions/get_classifications__id_.js",
+            "title": "Fetch resource",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_classifications__id_.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_credits": {
+            "main": "./lib/actions/get_credits.js",
+            "title": "Fetch resource collection",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_credits.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_credits__id_": {
+            "main": "./lib/actions/get_credits__id_.js",
+            "title": "Fetch resource",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_credits__id_.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_episodes": {
+            "main": "./lib/actions/get_episodes.js",
+            "title": "Fetch resource collection",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_episodes.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_episodes__id_": {
+            "main": "./lib/actions/get_episodes__id_.js",
+            "title": "Fetch resource",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_episodes__id_.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_episodes__id__next_sibling": {
+            "main": "./lib/actions/get_episodes__id__next_sibling.js",
+            "title": "Fetch next resource",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_episodes__id__next_sibling.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_episodes__id__previous_sibling": {
+            "main": "./lib/actions/get_episodes__id__previous_sibling.js",
+            "title": "Fetch previous resource",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_episodes__id__previous_sibling.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_images": {
+            "main": "./lib/actions/get_images.js",
+            "title": "Fetch resource collection",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_images.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_images__id_": {
+            "main": "./lib/actions/get_images__id_.js",
+            "title": "Fetch resource",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_images__id_.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_media_assets": {
+            "main": "./lib/actions/get_media_assets.js",
+            "title": "Fetch resource collection",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_media_assets.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_media_assets__id_": {
+            "main": "./lib/actions/get_media_assets__id_.js",
+            "title": "Fetch resource",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_media_assets__id_.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_networks": {
+            "main": "./lib/actions/get_networks.js",
+            "title": "Fetch resource collection",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_networks.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_networks__id_": {
+            "main": "./lib/actions/get_networks__id_.js",
+            "title": "Fetch resource",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_networks__id_.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_people": {
+            "main": "./lib/actions/get_people.js",
+            "title": "Fetch resource collection",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_people.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_people__id_": {
+            "main": "./lib/actions/get_people__id_.js",
+            "title": "Fetch resource",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_people__id_.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_seasons": {
+            "main": "./lib/actions/get_seasons.js",
+            "title": "Fetch resource collection",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_seasons.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_seasons__id_": {
+            "main": "./lib/actions/get_seasons__id_.js",
+            "title": "Fetch resource",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_seasons__id_.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_series": {
+            "main": "./lib/actions/get_series.js",
+            "title": "Fetch resource collection",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_series.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_series__id_": {
+            "main": "./lib/actions/get_series__id_.js",
+            "title": "Fetch resource",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_series__id_.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        }
+    }
+}
